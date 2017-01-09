@@ -26,6 +26,11 @@
   				<artifactId>camel-spring</artifactId>
   				<version>${camel-version}</version>
   			</dependency> 		
+   			<dependency>
+  				<groupId>org.apache.camel</groupId>
+  				<artifactId>camel-spring-javaconfig</artifactId>
+  				<version>${camel-version}</version>
+  			</dependency>   			
     		<dependency>
   				<groupId>org.apache.camel</groupId>
   				<artifactId>camel-jms</artifactId>
@@ -76,6 +81,10 @@
   				</exclusion>
   			</exclusions>
   		</dependency>  	
+  		<dependency>
+  			<groupId>org.apache.camel</groupId>
+  			<artifactId>camel-spring-javaconfig</artifactId>
+  		</dependency>   		
   		<dependency>
   			<groupId>org.apache.camel</groupId>
   			<artifactId>camel-jms</artifactId>

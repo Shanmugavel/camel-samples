@@ -22,9 +22,9 @@ public class SamplesRouteBuilder extends RouteBuilder {
 	public void configure() throws Exception {
 		LOGGER.info("About to Configure Routes!");
 		
-		from("direct:foo").routeId("foo~bar").log("From Foo to Bar").to("direct:bar");
+		from("direct:foo").routeId(RouteNames.FOO_TO_BAR.toString()).log("From Foo to Bar").to("direct:bar");
 		
-		from("direct:bar").routeId("bar~out").to("stream:out");
+		from("direct:bar").routeId(RouteNames.BAR_TO_OUT.toString()).to("stream:out");
 		
 		LOGGER.info("Configured Routes!");
 	}

@@ -13,6 +13,7 @@
 	   <log4j2-version>2.7</log4j2-version>
 	   <slf4j-version>1.7.21</slf4j-version>
 	   <commons-pool2-version>2.4.2</commons-pool2-version>
+	   <junit-version>4.12</junit-version>
 	</properties>
   	<dependencyManagement>
   		<dependencies>
@@ -40,7 +41,19 @@
   				<groupId>org.apache.camel</groupId>
   				<artifactId>camel-stream</artifactId>
   				<version>${camel-version}</version>
-  			</dependency>  			
+  			</dependency>  	
+      		<dependency>
+  				<groupId>org.apache.camel</groupId>
+  				<artifactId>camel-test</artifactId>
+  				<version>${camel-version}</version>
+  				<scope>test</scope>
+  			</dependency>  					
+      		<dependency>
+  				<groupId>junit</groupId>
+  				<artifactId>junit</artifactId>
+  				<version>${junit-version}</version>
+  				<scope>test</scope>
+  			</dependency>
      		<dependency>
   				<groupId>org.apache.activemq</groupId>
   				<artifactId>activemq-camel</artifactId>
@@ -93,6 +106,14 @@
   			<groupId>org.apache.camel</groupId>
   			<artifactId>camel-stream</artifactId>
   		</dependency>  
+  		<dependency>
+  			<groupId>org.apache.camel</groupId>
+  			<artifactId>camel-test</artifactId>
+  		</dependency> 
+  		<dependency>
+  			<groupId>junit</groupId>
+  			<artifactId>junit</artifactId>
+  		</dependency> 
   		<!-- activemq Jars -->		
    		<dependency>
 			<groupId>org.apache.activemq</groupId>
